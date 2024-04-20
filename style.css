@@ -1,0 +1,888 @@
+/*This is the link for the icons*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --forfont: "Open Sans", sans-serif;
+    --red: #B40909;
+    --blue: #051E3A;
+    --grayforbg: #121212;
+    --grayfortext1: #454545;
+    --grayfortext2: #B2B2B2;
+}
+
+html{
+    font-size: 1rem; 
+    overflow-x: hidden;
+}
+
+body{
+    font-family: var(--forfont);
+}
+
+/*The styling for the header starts here*/
+.header{
+    padding: 1.2rem 0;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.logo-div, .logo-text-div{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-logo{
+    width: 60px;
+    height: 64px;
+}
+
+a .p-logo-text{
+    color: #707070;
+}
+
+.header-sec-2{
+    height: 3rem;
+    width: 90vw;
+    background: var(--red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-link{
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-bars{
+    display: none;
+    gap: 1rem;
+    color: #ffffff;
+    align-items: center;
+    height: 100%;
+    padding-left: 2rem;
+}
+
+.fa-bars{
+    font-size: 2rem;
+}
+
+.link-listitem > a{
+    color: #ffffff;
+    font-weight: 550;
+    width: max-content;
+    height: 3rem;
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-family: sans-serif;
+}
+
+.link-listitem > a:hover{
+    background: var(--blue);
+}
+
+/*The styling for the header ends here*/
+
+/*The styling for the home section starts here*/
+
+.home-section-container{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.home-section-inner-container{
+    width: 90vw;
+    background: #f2f2f2;
+    display: flex;
+    gap: 2rem;
+}
+
+.img-div{
+    display: flex;
+}
+
+.cta-image{
+    width: 740px;
+    height: 360px;
+    z-index: -1;
+}
+
+.container-for-blue-square{
+    display: flex;
+    gap: 8px;
+    position: relative;
+    z-index: 99;
+    left: 82%;
+    top: -16%;
+}
+
+.blue-square{
+    width: 15px;
+    height: 15px;
+    background: #15467d;
+} 
+
+.red-square{
+    background: rgb(165, 16, 16);
+}
+
+.cta-label-text{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: max-content;
+    
+}
+
+.cta-text-div, .cta-red-line-div {
+    width: 80%;
+}
+
+.cta-label{
+    color: #051E3A;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cta-label:hover{
+    color: #7c8897;
+}
+
+.cta-text{
+    color: #454545;
+}
+
+.red-line{
+    width: 110px;
+    height: 3px;
+    background: var(--red);
+    border-radius: 2rem;
+}
+
+/*The styling for the home section ends here*/
+
+/*The styling for the New Documents and News, Presss Releases section starts here*/
+
+.new-documents-and-news-presss-releases-container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: max-content;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.new-documents-and-news-presss-releases-inner-container{
+    display: flex;
+    width: 90vw;
+    
+}
+
+.vice-president-image-container{
+    width: 20.8vw;
+    height: 75vh;
+    background: #f2f2f2;
+    margin-right: 1rem;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.vice-president-image{
+    width: 266px;
+    height: 350px;
+}
+
+.white-circle-article{
+    width: 20.8vw;
+    height: 4rem;
+}
+
+.white-circle{
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    color: #000;
+    border-radius: 50%;
+}
+
+.news-presss-releases{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border-left: 1px solid  #f2f2f2;
+    border-right: 1px solid  #f2f2f2;
+    gap: 1.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.news-presss-releases-link-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.news-presss-releases-date-link{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.news-presss-releases-date{
+    color: #707070;
+    font-family: "poppins", "sans-serif";
+}
+
+.news-presss-releases-link{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #454545;
+    font-family: var(--forfont);
+}
+
+.news-presss-releases-link:hover{
+    text-decoration: underline;
+    color: var(--red);
+}
+
+.recent-documents-article-link-label-container{
+    display: flex;
+    flex-direction: column;
+    width: 26vw;
+    gap: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.recent-documents-label, .news-presss-releases-label{
+    color: #454545;
+    font-weight: 500;
+}
+
+.recent-documents-link-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.recent-documents-article-link2{
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    padding-bottom: .8rem;
+    padding-top: .8rem;
+}
+
+.recent-documents-link{
+    font-size: .9rem;
+    color: #454545;
+
+}
+
+.recent-documents-link:hover{
+    color: var(--red);
+    text-decoration: underline;
+}
+
+/*The styling for the New Documents and News, Presss Releases section ends here*/
+
+/*The styling for the organization section starts here*/
+
+.organization-section-container{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;
+    padding-top: 4rem;
+}
+
+.organization-section-inner-container{
+    width: 90vw;
+    display: flex;
+    gap: 2rem;
+}
+
+.organization-image{
+    width: 450px;
+    height: 320px;
+    border-radius: .6rem;
+}
+
+.organization-section-link-contaner{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.organization-link-contaner{
+    width: 50vw;
+    height: 24vh;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    background: #f2f2f2;
+    border-radius: 2rem;
+}
+
+.organization-icon{
+    font-size: 4rem;
+    color: #454545;
+    margin-left: 2rem;
+}
+
+.organization-link{
+    color: var(--red);
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+.organization-link:hover{
+    text-decoration: underline;
+}
+
+/*The styling for the organization section ends here*/
+
+/*The styling for the footer starts here*/
+
+.footer{
+    width: 100vw;
+    height: 120vh;
+    background: var(--blue);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-section-1{
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section-2{
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    gap: 4rem;
+    margin-top: 10rem;
+}
+
+.footer-info-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-para-container{
+    width: 15vw;
+    margin-bottom: 1.5rem;
+}
+
+.footer-para-container > p{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.footer-icon-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.footer-icon:hover{
+    color: var(--red);
+
+}
+
+.footer-link{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 8rem;
+}
+
+.footer-link-art{
+    display: flex;
+    gap: .8rem;
+    height: 1rem;
+}
+
+.flink, .fa-angle-right{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: "poppins", "san-serif";
+    transition: all .3s ease;
+}
+
+.flink:hover{
+    color: #B40909;
+    text-decoration: underline;
+}
+
+/*The footer styling styling ends here*/
+
+@media(max-width: 900px){
+
+    .nav-bar{
+        display: none;
+    }
+
+    .menu-bars{
+        display: flex;
+    }
+
+    
+    .header{
+        padding: 1.2rem 0;
+        width: 100vw;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    
+    }
+    
+    .logo-div, .logo-text-div{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .header-logo{
+        width: 60px;
+        height: 64px;
+    }
+    
+    a .p-logo-text{
+        color: #707070;
+    }
+    
+    .header-sec-2{
+        height: 3rem;
+        width: 90vw;
+        background: var(--red);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-link{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .menu-bars{
+        display: none;
+        gap: 1rem;
+        color: #ffffff;
+        align-items: center;
+        height: 100%;
+        padding-left: 2rem;
+    }
+    
+    .fa-bars{
+        font-size: 2rem;
+    }
+    
+    .link-listitem > a{
+        color: #ffffff;
+        font-weight: 550;
+        width: max-content;
+        height: 3rem;
+        padding: 0 .5rem;
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        font-family: sans-serif;
+    }
+    
+    .link-listitem > a:hover{
+        background: var(--blue);
+    }
+    
+    /*The styling for the header ends here*/
+    
+    /*The styling for the home section starts here*/
+    
+    .home-section-container{
+        width: 100vw;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    
+    .home-section-inner-container{
+        width: 90vw;
+        background: #f2f2f2;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .img-div{
+        display: flex;
+    }
+    
+    .cta-image{
+        width: 740px;
+        height: 360px;
+        z-index: -1;
+    }
+    
+    .container-for-blue-square{
+        display: flex;
+        gap: 8px;
+        position: relative;
+        z-index: 99;
+        left: 82%;
+        top: -16%;
+    }
+    
+    .blue-square{
+        width: 15px;
+        height: 15px;
+        background: #15467d;
+    } 
+    
+    .red-square{
+        background: rgb(165, 16, 16);
+    }
+    
+    .cta-label-text{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: max-content;
+        
+    }
+    
+    .cta-text-div, .cta-red-line-div {
+        width: 80%;
+    }
+    
+    .cta-label{
+        color: #051E3A;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .cta-label:hover{
+        color: #7c8897;
+    }
+    
+    .cta-text{
+        color: #454545;
+    }
+    
+    .red-line{
+        width: 110px;
+        height: 3px;
+        background: var(--red);
+        border-radius: 2rem;
+    }
+    
+    /*The styling for the home section ends here*/
+    
+    /*The styling for the New Documents and News, Presss Releases section starts here*/
+    
+    .new-documents-and-news-presss-releases-container{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        height: max-content;
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .new-documents-and-news-presss-releases-inner-container{
+        display: flex;
+        width: 90vw;
+        flex-direction: column;
+    }
+    
+    .vice-president-image-container{
+        display: none;
+    }
+    
+    .news-presss-releases{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        border-left: 1px solid  #f2f2f2;
+        border-right: 1px solid  #f2f2f2;
+        gap: 1.3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .news-presss-releases-link-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+    
+    .news-presss-releases-date-link{
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+    }
+    
+    .news-presss-releases-date{
+        color: #707070;
+        font-family: "poppins", "sans-serif";
+    }
+    
+    .news-presss-releases-link{
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #454545;
+        font-family: var(--forfont);
+    }
+    
+    .news-presss-releases-link:hover{
+        text-decoration: underline;
+        color: var(--red);
+    }
+    
+    .recent-documents-article-link-label-container{
+        display: flex;
+        flex-direction: column;
+        width: 26vw;
+        gap: 1.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .recent-documents-label, .news-presss-releases-label{
+        color: #454545;
+        font-weight: 500;
+    }
+    
+    .recent-documents-link-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+    
+    .recent-documents-article-link2{
+        border-bottom: 1px solid #f2f2f2;
+        border-top: 1px solid #f2f2f2;
+        padding-bottom: .8rem;
+        padding-top: .8rem;
+    }
+    
+    .recent-documents-link{
+        font-size: .9rem;
+        color: #454545;
+    
+    }
+    
+    .recent-documents-link:hover{
+        color: var(--red);
+        text-decoration: underline;
+    }
+    
+    /*The styling for the New Documents and News, Presss Releases section ends here*/
+    
+    /*The styling for the organization section starts here*/
+    
+    .organization-section-container{
+        width: 100vw;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 6rem;
+        padding-top: 4rem;
+    }
+    
+    .organization-section-inner-container{
+        width: 90vw;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    
+    .organization-image{
+        width: 690px;
+        height: 350px;
+        border-radius: .6rem;
+    }
+    
+    .organization-section-link-contaner{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .organization-link-contaner{
+        width: 90vw;
+        height: 24vh;
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+        background: #f2f2f2;
+        border-radius: 2rem;
+    }
+    
+    .organization-icon{
+        font-size: 4rem;
+        color: #454545;
+        margin-left: 2rem;
+    }
+    
+    .organization-link{
+        color: var(--red);
+        font-size: 1.3rem;
+        font-weight: 500;
+        transition: all .3s;
+    }
+    
+    .organization-link:hover{
+        text-decoration: underline;
+    }
+    
+    /*The styling for the organization section ends here*/
+    
+    /*The styling for the footer starts here*/
+    
+    .footer{
+        width: 100vw;
+        height: 120vh;
+        background: var(--blue);
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footer-section-1{
+        width: 90vw;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .footer-section-2{
+        width: 90vw;
+        height: max-content;
+        display: flex;
+        gap: 4rem;
+        margin-top: 10rem;
+    }
+    
+    .footer-info-icon{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .footer-para-container{
+        width: 15vw;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer-para-container > p{
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    
+    .footer-icon-container{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .footer-icon{
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    
+    .footer-icon:hover{
+        color: var(--red);
+    
+    }
+    
+    .footer-link{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 8rem;
+    }
+    
+    .footer-link-art{
+        display: flex;
+        gap: .8rem;
+        height: 1rem;
+    }
+    
+    .flink, .fa-angle-right{
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 1.1rem;
+        font-family: "poppins", "san-serif";
+        transition: all .3s ease;
+    }
+    
+    .flink:hover{
+        color: #B40909;
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+
+
+
+}
