@@ -1,20 +1,6 @@
 /*This is the link for the icons*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
 
-
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 800
-
-.open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
-
-
 *{
     margin: 0;
     padding: 0;
@@ -450,12 +436,18 @@ a .p-logo-text{
     height: 1rem;
 }
 
-.flink, .fa-angle-right{
+.flink{
     color: #ffffff;
     font-weight: 600;
     font-size: 1.1rem;
     font-family: "poppins", "san-serif";
     transition: all .3s ease;
+}
+
+.fa-angle-right{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .flink:hover{
